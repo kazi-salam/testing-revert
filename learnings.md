@@ -41,3 +41,10 @@ fork ==> 3rd party repo ==> own github ==> git clone
 - Undo Changes ->
 
   (working directory -> staging area -> local repo -> remote repo)
+
+  command:
+
+  - git checkout -- . (discard changes in the working directory)
+  - git checkout -- <filename>
+  - git reset HEAD . (unstaging changes)
+  - git reset -hard HEAD .
