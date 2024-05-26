@@ -44,7 +44,6 @@ fork ==> 3rd party repo ==> own github ==> git clone
 
   command:
 
-  - git checkout -- . (discard changes in the working directory)
-  - git checkout -- <filename>
-  - git reset HEAD . (unstaging changes)
-  - git reset -hard HEAD .
+  - git checkout -- . (undo from unstaging)
+  - git reset HEAD . (undo from staging)
+  - git reset -hard HEAD (undo from and unstaging)
